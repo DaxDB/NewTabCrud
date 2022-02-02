@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .header1 {
@@ -10,15 +11,17 @@ body {
 .menu {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin: 10px 0px;
+
 }
 
 .menu a {
     text-decoration: none;
     font-weight: bold;
     color: blue;
-    margin-right: 15px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-right: 7px;
+    margin-left: 7px;
     border: 1px solid blue;
     padding: 5px;
 }
+

@@ -1,0 +1,52 @@
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forms div {
+    width: 100%;
+    padding: 1px;
+  
+}
+
+.forms .big-label {
+    
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+
+}
+
+.forms .form-line {
+    margin-bottom: 15px;
+
+}
+
+xp-line div {
+    display: inline-block;
+    width: 40%;
+
+}
+
+@media screen and (max-width:419px) {
+    .forms input[type:"text"] {
+        width: 100%;
+    }    
+    .forms .big-label {
+        width: 100%;
+        text-align: center;
+    }
+    .xp-line {
+        flex-direction: column;
+
+    }
+    .xp-line div {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
+
+}

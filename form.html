@@ -2,7 +2,9 @@
 <html>
     <head>
         <title>Sample Project</title>
-        <link rel="stylesheet" href="./assets/css/style.css"
+        <link rel="stylesheet" href="./assets/css/style.css"/>
+        <link rel="stylesheet" href="./assets/css/form.css"/>
+
     </head>
     <body>
         <header class="header1">
@@ -17,7 +19,36 @@
                 Register
             </a>
         </section>
-    <body>
-        Student List
+        <section>
+            <form class="forms">
+                <div class="form-line">
+                    <label class="big-label" for="name">Name:</label>
+                    <input name="name" id="name" required type="text" />
+                </div>
+                
+                <div class="form-line">   
+                    <label class="big-label" for="phone">Telephone:</label>
+                    <input name="phone" id="phone" required type="text" />
+                </div>
+                
+                <div class="form-line xp-line" style="display: flex;">
+                    <label class="big-label">Previous Experience:</label>
+                <div>
+                    <input type="radio" name="xp" id="xp-yes" /> <label for="xp-yes">
+                        Yes
+                    </label>
+                    <br />
+                    <input type="radio" name="xp" id="xp-no" /> <label for="xp-no">
+                        No
+                    </label>
+                </div>
+            </div>
+                
+                <input type="submit" value="Save" />
+            </form>
+        </section>
     </body>
 </html>
+            
+            
+        
