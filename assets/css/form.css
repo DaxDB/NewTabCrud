@@ -1,52 +1,58 @@
+html {
+  --bg: #ffffff;
+  --color-text: #333333;
+  --link-color: #0000ff;
+  --color-headings: #0077ff;
+  --listbg-color: #000000;
+  --listtext-color: #ffffff;
+  --listmiddle-color: #ffa07a;
+  --listbackground: #ffffff;
+}
+body {
+  background-color: var(--bg);
+}
 .forms {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .forms div {
-    width: 100%;
-    padding: 1px;
-  
+  width: 100%;
+  padding: 1px;
 }
 
 .forms .big-label {
-    
-    width: 50%;
-    display: inline-block;
-    text-align: right;
-
+  width: 50%;
+  display: inline-block;
+  text-align: right;
 }
 
 .forms .form-line {
-    margin-bottom: 15px;
-
+  margin-bottom: 15px;
 }
 
 xp-line div {
-    display: inline-block;
-    width: 40%;
-
+  display: inline-block;
+  width: 40%;
 }
 
-@media screen and (max-width:419px) {
-    .forms input[type:"text"] {
-        width: 100%;
-    }    
-    .forms .big-label {
-        width: 100%;
-        text-align: center;
-    }
-    .xp-line {
-        flex-direction: column;
-
-    }
-    .xp-line div {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-    }
-    
-
+@media screen and (max-width: 419px) {
+  .formsinput[type: "text" ] {
+    width: 100%;
+  }
+  .forms .big-label {
+    width: 100%;
+    text-align: center;
+  }
+  .xp-line {
+    flex-direction: column;
+  }
+  .xp-line div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
 }

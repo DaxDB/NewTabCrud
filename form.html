@@ -2,8 +2,9 @@
 <html>
     <head>
         <title>Sample Project</title>
-        <link rel="stylesheet" href="./assets/css/style.css"/>
+        <link rel="stylesheet" href="./assets/css/styles.css"/>
         <link rel="stylesheet" href="./assets/css/form.css"/>
+       
 
     </head>
     <body>
@@ -12,12 +13,20 @@
             <img src="./assets\img\logo.png" />
         </header>
         <section class="menu">
-            <a href="./index.html">
+            <a href="./index.html" style="color: var(--color-text);">
                 List
             </a>
-            <a href="./form.html">
+            <a href="./form.html" style="color: var(--color-text);">
                 Register
             </a>
+            <div class="h1-div">
+        
+                <h1 class="dark-tg">Dark Mode</h1>
+            </div>
+            <div class="toggle">
+                <input id="switch" type="checkbox" name="theme">
+                <label class="label-tg" for="switch">Toggle</label>
+            </div>
         </section>
         <section>
             <form class="forms">
@@ -47,6 +56,7 @@
                 <input type="submit" value="Save" />
             </form>
         </section>
+        <script src="./assets/js/darkmode.js"></script>
     </body>
 </html>
             

@@ -1,16 +1,28 @@
+html {
+  --bg: #ffffff;
+  --color-text: #333333;
+  --link-color: #0000ff;
+  --color-headings: #0077ff;
+  --listbg-color: #000000;
+  --listtext-color: #ffffff;
+  --listmiddle-color: #ffa07a;
+  --listbackground: #ffffff;
+}
+body {
+  background-color: var(--bg);
+}
 .list {
-    width: 100%;
-    border-spacing: 0;
+  width: 100%;
+  border-spacing: 0;
 }
 
 .list tr:nth-child(1) {
-    vertical-align: top;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-
+  vertical-align: top;
+  background-color: var(--listbg-color);
+  color: var(--listtext-color);
+  font-weight: bold;
 }
 
 .lista tr td {
-    padding: 5px;
+  padding: 5px;
 }
