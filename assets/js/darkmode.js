@@ -23,7 +23,7 @@ const darkMode = {
     colorText: "#FFFFFF",
     linkColor: "#343434",
     colorHeadings: "#3664FF",
-    listbgColor: "#000000",
+    listbgColor: "green",
     listtextColor: "#FFFFFF",
     listbackground:"#FFFFFF"
     

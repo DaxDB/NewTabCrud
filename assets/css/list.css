@@ -3,7 +3,7 @@ html {
   --color-text: #333333;
   --link-color: #0000ff;
   --color-headings: #0077ff;
-  --listbg-color: #000000;
+  --listbg-color: red;
   --listtext-color: #ffffff;
   --listmiddle-color: #ffa07a;
   --listbackground: #ffffff;
@@ -14,15 +14,24 @@ body {
 .list {
   width: 100%;
   border-spacing: 0;
+  font-size: 20px;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 500;
 }
 
 .list tr:nth-child(1) {
-  vertical-align: top;
+  vertical-align: to;
   background-color: var(--listbg-color);
   color: var(--listtext-color);
   font-weight: bold;
 }
-
-.lista tr td {
-  padding: 5px;
+table.list td {
+  padding-left: 10px;
+}
+.list-section {
+  display: flex;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 6px;
 }
