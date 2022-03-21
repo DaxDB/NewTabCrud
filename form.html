@@ -16,7 +16,7 @@
             <img src="./assets\img\logo.png" />
         </header>
         <section class="menu">
-            <a href="./index.html" style="color: var(--color-text);">
+            <a id="goHome" href="./index.html" style="color: var(--color-text);">
                 List
             </a>
             <a href="./form.html" style="color: var(--color-text);">
@@ -32,24 +32,24 @@
             </div>
         </section>
         <section class="div-form">
-            <form class="forms">
+            <form class="forms" onsubmit="formTest(event);">
                 <div class="form-line">
                     <label class="big-label" for="name">Name:</label>
-                    <input name="name" id="name" required type="text" />
+                    <input name="name" id="name" required type="text" placeholder="Put your name here" />
                 </div>
                 
                 <div class="form-line">   
                     <label class="big-label" for="phone">Telephone:</label>
-                    <input name="phone" id="phone" required type="text" />
+                    <input name="tel" id="tel"  placeholder="(00) 00000-0000" onkeypress="testPhone(event)" onfocus="this.value = ''" required type="text"/>
                 </div>
                 
                 <div class="form-line xp-line" style="display: flex;">
                     <label class="big-label">Previous Experience:</label>
-                    <input type="radio" name="xp" id="xp-yes" /> <label for="xp-yes">
+                    <input type="radio" name="xp" id="xp-yes" value="true" /> <label for="xp-yes">
                         Yes
                     </label>
                     <br />
-                    <input type="radio" name="xp" id="xp-no" /> <label for="xp-no">
+                    <input type="radio" name="xp" id="xp-no" value="false" /> <label for="xp-no">
                         No
                     </label>
                 </div>
@@ -60,6 +60,7 @@
         </section>
         <script src="./assets/js/darkmode.js"></script>
         <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/form.js"></script>
     </body>
 </html>
             
